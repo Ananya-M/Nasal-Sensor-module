@@ -2,7 +2,22 @@
 A thermistor based nasal sensor
 
 
-This is a tool allowing continuous accurate measurement and recording of airflow in each nostril separately.Exploring the nasal cycle unveils a connection with vital physiological measures—heart rate, blood pressure, temperature, glucose levels, intraocular pressure, blink rate, metabolic rate, and oxygen consumption. Serving as an intricate indicator of autonomic arousal and offering insights into brain function asymmetry, the nasal cycle becomes a captivating avenue for monitoring internal body cycles and potential markers for diseases.I implemented a system utilizing a thermistor interfaced with an Atmega microcontroller to capture real-time breathing signals. These signals were then transmitted to a mobile application for immediate monitoring. Subsequently, I conducted in-depth analysis using MATLAB to derive valuable insights from the acquired data.
+This is a tool allowing continuous accurate measurement and recording of airflow in each nostril separately.Exploring the nasal cycle unveils a connection with vital physiological measures—heart rate, blood pressure, temperature, glucose levels, intraocular pressure, blink rate, metabolic rate, and oxygen consumption. Serving as an intricate indicator of autonomic arousal and offering insights into brain function asymmetry, the nasal cycle becomes a captivating avenue for monitoring internal body cycles and potential markers for diseases.I implemented a system utilizing a thermistor interfaced with an Atmega microcontroller to capture real-time breathing signals. These signals were then transmitted to a mobile application for immediate monitoring. Subsequently, I conducted in-depth analysis using MATLAB to derive valuable insights from the acquired data.The Nasal Sensor Module is designed to provide real-time sensor readings interfaced via an Atmega328 microcontroller. The sensor data is then relayed to a mobile application created using Blynk. Additionally, the data is stored on an SD card for offline analysis. To understand the system better, refer to the provided system_diagram.
+
+Components
+
+- Sensor Readings: Interfaced via Atmega328 microcontroller after amplification.
+- Mobile Application: Created using Blynk for real-time monitoring.
+- Data Storage: Sensor data is stored on an SD card for offline analysis.
+- MATLAB GUI: A MATLAB graphical user interface (GUI) is provided (GUI1.m code) for analyzing stored data. Use sample readings (e.g., SUB1.TXT) as input.
+
+
+Files and Directory Structure
+
+- Sensor Data:Interfaced to the microcontroller using `final.io` code.
+- Mobile Application:Created with Blynk.
+- MATLAB GUI:Use `GUI1.m` code for offline analysis. Place sample readings (e.g., `SUB1.TXT`) in the same directory.
+
 
 Running the Codebase
 
